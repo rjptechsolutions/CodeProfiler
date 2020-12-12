@@ -1,0 +1,30 @@
+<div class="card user-card">
+  <div class="background bg-info">
+    <img class="img-fluid rounded-circle profile-pic border-2 border-white" [src]="user.avatar_url" alt="" />
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ user.name }}
+    </h5>
+    <p *ngIf="user.bio" class="card-text">
+      <fa-icon [icon]="faGraduationCap"></fa-icon>
+      {{ user.bio }}
+    </p>
+    <p *ngIf="user.location" class="card-text">
+      <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+      {{ user.location }}
+    </p>
+    <p *ngIf="user.email" class="card-text">
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+      {{ user.email }}
+    </p>
+    <p *ngIf="user.company" class="card-text">
+      <fa-icon [icon]="faBuilding"></fa-icon>
+      {{ user.company }}
+    </p>
+    <p class="card-text">
+      Total Repository:
+      {{ user.public_repos }}
+    </p>
+  </div>
+</div>

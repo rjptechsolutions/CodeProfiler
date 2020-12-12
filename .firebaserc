@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gitseach-77ec1": {
+      "hosting": {
+        "github-login-firebase": [
+          "gitseach-77ec1"
+        ]
+      }
+    }
+  }
+}
